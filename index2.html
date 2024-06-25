@@ -1,0 +1,461 @@
+<html>
+
+<head>
+
+    <title>Grid</title>
+    <style>
+        body {
+            height: 110vh;
+            background-image: url(cafe1.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: repeat;
+        }
+
+        #div01 {
+            height: 45vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 500px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: 650px;
+            margin-bottom: 10px;
+
+        }
+
+        #div02 {
+            height: 35vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 500px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: 650px;
+            margin-bottom: 10px;
+
+        }
+
+        #div03 {
+            height: 40vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 500px;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: 650px;
+            margin-bottom: 10px;
+
+        }
+
+        #div04 {
+            height: 40vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 500px;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: 650px;
+            margin-bottom: 10px;
+
+        }
+
+        #heading01 h1 {
+            color: black;
+            background-color: rgb(255, 213, 0);
+            font-size: xx-large;
+            width: 180px;
+            text-align: center;
+            padding: 15px;
+            margin-left: 640px;
+            box-shadow: 5px 5px 5px rgba(223, 95, 243, 0.5);
+        }
+
+        #heading01 h1:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(173, 87, 87);
+            box-shadow: 10px 10px 10px rgb(41, 19, 46);
+            transition: .5s;
+        }
+
+        #heading02 h1 {
+            color: black;
+            background-color: rgb(255, 213, 0);
+            font-size: xx-large;
+            width: 250px;
+            text-align: center;
+            padding: 15px;
+            margin-left: 599px;
+            box-shadow: 5px 5px 5px rgba(223, 95, 243, 0.5);
+        }
+
+        #heading02 h1:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(173, 87, 87);
+            box-shadow: 10px 10px 10px rgb(41, 19, 46);
+            transition: .5s;
+        }
+
+        #heading03 h1 {
+            color: black;
+            background-color: rgb(255, 213, 0);
+            font-size: xx-large;
+            width: 250px;
+            text-align: center;
+            padding: 15px;
+            margin-left: 599px;
+            box-shadow: 5px 5px 5px rgba(223, 95, 243, 0.5);
+        }
+
+        #heading03 h1:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(173, 87, 87);
+            box-shadow: 10px 10px 10px rgb(41, 19, 46);
+            transition: .5s;
+        }
+
+        #heading04 h1 {
+            color: black;
+            background-color: rgb(255, 213, 0);
+            font-size: xx-large;
+            width: 250px;
+            text-align: center;
+            padding: 15px;
+            margin-left: 599px;
+            box-shadow: 5px 5px 5px rgba(223, 95, 243, 0.5);
+        }
+
+        #heading04 h1:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(173, 87, 87);
+            box-shadow: 10px 10px 10px rgb(41, 19, 46);
+            transition: .5s;
+        }
+        .items {
+            background-color: darkslategrey;
+            border: 2px solid black;
+            margin: 3px;
+            justify-items: center;
+        }
+
+        #item01 h1 {
+            color: black;
+            background-color: rgb(255, 153, 153);
+            font-size: x-large;
+            width: 70%;
+            text-align: center;
+            padding: 10px;
+            margin-left: 20px;
+            box-shadow: 3px 3px 3px rgba(95, 112, 243, 0.5);
+        }
+
+        #item01 h1:hover {
+            color: brown;
+            background-color: plum;
+            box-shadow: 10px 10px 10px rgb(42, 16, 92);
+            transition: .5s;
+        }
+
+        #item02 h1 {
+            color: black;
+            background-color: rgb(255, 153, 153);
+            font-size: x-large;
+            width: 70%;
+            text-align: center;
+            padding: 10px;
+            margin-left: 20px;
+            box-shadow: 8px 8px 8px rgba(95, 112, 243, 0.5);
+        }
+
+        #item02 h1:hover {
+            color: brown;
+            background-color: plum;
+            box-shadow: 10px 10px 10px rgb(42, 16, 92);
+            transition: .5s;
+        }
+
+        #item03 h1 {
+            color: black;
+            background-color: rgb(255, 153, 153);
+            font-size: x-large;
+            width: 70%;
+            text-align: center;
+            padding: 10px;
+            margin-left: 20px;
+            box-shadow: 8px 8px 8px rgba(95, 112, 243, 0.5);
+        }
+
+        #item03 h1:hover {
+            color: brown;
+            background-color: plum;
+            box-shadow: 10px 10px 10px rgb(42, 16, 92);
+            transition: .5s;
+        }
+
+        #item04 h1 {
+            color: black;
+            background-color:  rgb(255, 253, 136);
+            font-size: x-large;
+            width: 70%;
+            text-align: center;
+            padding: 10px;
+            margin-left: 20px;
+            box-shadow: 8px 8px 8px rgba(95, 112, 243, 0.5);
+        }
+
+        #item04 h1:hover {
+            color: brown;
+            background-color: plum;
+            box-shadow: 10px 10px 10px rgb(42, 16, 92);
+            transition: .5s;
+        }
+
+        #item05 h1 {
+            color: black;
+            background-color: rgb(255, 253, 136);
+            font-size: x-large;
+            width: 70%;
+            text-align: center;
+            padding: 10px;
+            margin-left: 20px;
+            box-shadow: 8px 8px 8px rgba(95, 112, 243, 0.5);
+        }
+
+        #item05 h1:hover {
+            color: brown;
+            background-color: plum;
+            box-shadow: 10px 10px 10px rgb(42, 16, 92);
+            transition: .5s;
+        }
+
+        #item06 h1 {
+            color: black;
+            background-color:  rgb(255, 253, 136);
+            font-size: x-large;
+            width: 70%;
+            text-align: center;
+            padding: 10px;
+            margin-left: 20px;
+            box-shadow: 8px 8px 8px rgba(95, 112, 243, 0.5);
+        }
+
+        #item06 h1:hover {
+            color: brown;
+            background-color: plum;
+            box-shadow: 10px 10px 10px rgb(42, 16, 92);
+            transition: .5s;
+        }
+
+        #item07 h1 {
+            color: black;
+            background-color: rgb(176, 122, 246);
+            font-size: x-large;
+            width: 70%;
+            text-align: center;
+            padding: 10px;
+            margin-left: 20px;
+            box-shadow: 8px 8px 8px rgba(95, 112, 243, 0.5);
+        }
+
+        #item07 h1:hover {
+            color: brown;
+            background-color: plum;
+            box-shadow: 10px 10px 10px rgb(42, 16, 92);
+            transition: .5s;
+        }
+
+        #item08 h1 {
+            color: black;
+            background-color: rgb(176, 122, 246);
+            font-size: x-large;
+            width: 70%;
+            text-align: center;
+            padding: 10px;
+            margin-left: 20px;
+            box-shadow: 8px 8px 8px rgba(95, 112, 243, 0.5);
+        }
+
+        #item08 h1:hover {
+            color: brown;
+            background-color: plum;
+            box-shadow: 10px 10px 10px rgb(42, 16, 92);
+            transition: .5s;
+        }
+
+        #item09 h1 {
+            color: black;
+            background-color: rgb(176, 122, 246);
+            font-size: x-large;
+            width: 70%;
+            text-align: center;
+            padding: 10px;
+            margin-left: 20px;
+            box-shadow: 8px 8px 8px rgba(95, 112, 243, 0.5);
+        }
+
+        #item09 h1:hover {
+            color: brown;
+            background-color: plum;
+            box-shadow: 10px 10px 10px rgb(42, 16, 92);
+            transition: .5s;
+        }
+
+        #item10 h1 {
+            color: black;
+            background-color: rgb(236, 116, 5);
+            font-size: x-large;
+            width: 70%;
+            text-align: center;
+            padding: 10px;
+            margin-left: 20px;
+            box-shadow: 8px 8px 8px rgba(95, 112, 243, 0.5);
+        }
+
+        #item10 h1:hover {
+            color: brown;
+            background-color: plum;
+            box-shadow: 10px 10px 10px rgb(42, 16, 92);
+            transition: .5s;
+        }
+
+        #item11 h1 {
+            color: black;
+            background-color: rgb(236, 116, 5);
+            font-size: x-large;
+            width: 70%;
+            text-align: center;
+            padding: 10px;
+            margin-left: 20px;
+            box-shadow: 8px 8px 8px rgba(95, 112, 243, 0.5);
+        }
+
+        #item11 h1:hover {
+            color: brown;
+            background-color: plum;
+            box-shadow: 10px 10px 10px rgb(42, 16, 92);
+            transition: .5s;
+        }
+
+        #item12 h1 {
+            color: black;
+            background-color: rgb(236, 116, 5);
+            font-size: x-large;
+            width: 70%;
+            text-align: center;
+            padding: 10px;
+            margin-left: 20px;
+            box-shadow: 8px 8px 8px rgba(95, 112, 243, 0.5);
+        }
+
+        #item12 h1:hover {
+            color: brown;
+            background-color: plum;
+            box-shadow: 10px 10px 10px rgb(42, 16, 92);
+            transition: .5s;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <p style="color: solid black; font-size: xxx-large; text-align: center; background-color: bisque;"><b>🍕🍔🍵 <u>CHOCO CAFE</u> 🍕🍔🍵</b></p>
+    <!--PIZZA START  -->
+    <div id="heading01">
+    <h1><u> PIZZA </u> - </h1>
+    </div>
+
+    
+    <div id="div01">
+        <div class="items" id="item01">
+            <img src="sweetcorn_pizza.jpg" style="height: 220px; width: 220px; border: 15px  black; border-style: double;">
+            <h1 style="text-align: center;">Corn Pizza</h1>
+        </div>
+        <div class="items" id="item02">
+            <img src="onion_pizza.jpg" style="height: 220px; width: 240px; border: 15px  black; border-style: double;">
+            <h1 style="text-align: center;">Onion Pizza</h1>
+        </div>
+        <div class="items" id="item03">
+            <img src="cheese_pizza.jpg" style="height: 220px; width: 240px; border: 15px  black; border-style: double;">
+            <h1 style="text-align: center;">Cheese Pizza</h1>
+        </div>
+    </div>
+
+
+    <!--BURGERS START -->
+    <div id="heading02">
+    <h1><u> BURGER </u> - </h1>
+    </div>
+
+
+    <div id="div02">        
+        <div class="items" id="item04">
+            <img src="burger3.jpg" style="height: 150px; border: 15px  black; border-style: double;">
+            <h1 style="text-align: center;"> Burger (diet) </h1>
+        </div>
+        <div class="items" id="item05">
+            <img src="burger1.jpg" style="height: 150px; width: 250px; border: 15px  black; border-style: double;">
+            <h1 style="text-align: center;"> Cheese burger </h1>
+        </div>
+        <div class="items" id="item06">
+            <img src="burger2.jpg" style="height: 150px; width: 240px; border: 15px  black; border-style: double;">
+            <h1 style="text-align: center;">King Burger</h1>
+        </div>
+    </div>
+
+    <!-- COKE START -->
+    <div id="heading03">
+    <h1><u> COKES </u> - </h1>
+    </div>
+
+
+    <div id="div03">
+        <div class="items" id="item07">
+            <img src="coke_small.jpg" style="height: 150px; width: 240px; border: 15px  black; border-style: double;">
+            <h1 style="text-align: center;"> Diet Coke <br>(small)</h1>
+        </div>
+        <div class="items" id="item08">
+            <img src="coke_medium.jpg" style="height: 150px; width: 240px; border: 15px  black; border-style: double;">
+            <h1 style="text-align: center;"> Diet Coke (medium)</h1>
+        </div>
+        <div class="items" id="item09">
+            <img src="coke_large.jpg" style="height: 150px; border: 15px  black; border-style: double;">
+            <h1 style="text-align: center;"> Diet Coke <br>(large)</h1>
+        </div>
+    </div>
+
+    <!-- COFFEE and ROLL -->
+    <div id="heading04">
+    <h1><u> EXTRAS </u> - </h1>
+    </div>
+
+
+    <div id="div04">
+        <div class="items" id="item10">
+            <img src="small_coffee.jpg" style="height: 150px; width: 240px; border: 15px rgb(46, 46, 46); border-style: double;">
+            <h1 style="text-align: center;">Cold Coffee (small)</h1>
+        </div>
+        <div class="items" id="item11">
+            <img src="coffee_large.jpg" style="height: 150px; width: 240px; border: 15px black; border-style: double;">
+            <h1 style="text-align: center;">Cold Coffee (large)</h1>
+        </div>
+        <div class="items" id="item12">
+            <img src="Veg-spring.jpg" style="height: 150px; width: 250px; border: 15px black; border-style: double;">
+            <h1 style="text-align: center;">Veg Spring rolls <br> (5 pieces)</h1>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+
+</html>
